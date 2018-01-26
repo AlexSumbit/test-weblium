@@ -1,0 +1,140 @@
+.container{
+    max-width: 1171px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule{
+    overflow: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.heading{
+    color: $black-two;
+    font-size: 20px;
+    line-height: 1.6;
+    display: block;
+    font-weight: 500;
+
+    &--title{
+        font-size: 32px;
+        color: $black;
+        line-height: normal;
+        font-weight: 400;
+        margin-bottom: 15px;
+        margin-top: 60px;
+    }
+
+    &--subtitle{
+        color: $brownish-grey;
+        margin-bottom: 50px;
+        margin-top: 0;
+        font-weight: 400;
+    }
+
+    &--large{
+        font-size: 24px;
+        line-height: normal;
+        font-weight: 400;
+        color: $black;
+    }
+}
+
+.text{
+    line-height: 1.5;
+    font-size: 16px;
+    color: $black-two;
+}
+
+.diary{ 
+    margin-bottom: 40px;
+}
+
+.row{
+    display: flex;
+    border-top: 1px solid $silver-light;
+    padding-top: 5px;
+    padding-bottom: 30px;
+
+    &--heading{
+        padding-top: 0;
+        padding-bottom: 20px;
+        border-top: none;
+    }
+
+    &--inner{
+        border-top: none;
+        padding-bottom: 10px;
+        padding-top: 0;
+        cursor: pointer;
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        user-select: none;
+        border-bottom: 1px solid transparent;
+    }
+
+    &--highlited{
+        //box-shadow: 0px 1px 1px rgba($color: #000, $alpha: 0.5);
+        border-bottom: 1px solid pink;
+    }
+
+    &__item{
+
+        &--3{
+            width: 33.3333%;
+        }
+        &--4{
+            width: 25%;
+        }
+        &--5{
+            width: 20%;
+        }
+        &--3-4{
+            width: 75%;
+        }
+    }
+}
+
+.buttons{
+    margin-top: 30px;
+}
+
+.btn{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 46px;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 20px;
+    margin: 0 25px;
+    transition: $time;
+    outline: none;
+
+    &--primary{
+        color: #fff;
+        background-color: $brownish-grey;
+        border: none;
+
+        &:hover{
+            background-color: lighten($brownish-grey, 10);
+            transform: scale(1.02);
+        }
+    }
+
+    &--secondary{
+        border-color: $silver-light;
+
+        &:hover{
+            border-color: #000;
+        }
+    }
+}
