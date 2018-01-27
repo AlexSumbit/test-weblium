@@ -2,6 +2,12 @@ a{
     color: unset;
 }
 
+.helper{
+    color: #4a90e2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
 
 .container{
     max-width: 1171px;
@@ -41,7 +47,6 @@ a{
 
     &--subtitle{
         color: $brownish-grey;
-        margin-bottom: 50px;
         margin-top: 0;
         font-weight: 400;
     }
@@ -61,7 +66,11 @@ a{
 }
 
 .diary{ 
-    margin-bottom: 40px;
+    margin: 50px auto 40px auto;
+
+    &--small{
+        max-width: 870px;
+    }
 }
 
 .row{
@@ -93,6 +102,9 @@ a{
 
     &__item{
 
+        &--2{
+            width: 50%;
+        }
         &--3{
             width: 33.3333%;
         }
@@ -104,6 +116,12 @@ a{
         }
         &--3-4{
             width: 75%;
+        }
+        &--2-3{
+            width: 66.6666%;
+        }
+        &--4-5{
+            width: 80%;
         }
     }
 }
