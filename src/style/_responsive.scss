@@ -1,0 +1,70 @@
+@media (max-width: 768px){
+    .diary{
+
+        &--five{
+            .row__item--4,
+            .row__item--3{
+                &:last-child{
+                    display: none;
+                }
+            }
+            .row__item--4{
+                width: 33.333%;
+            }
+        }
+    }
+}
+
+@media (max-width: 530px){
+
+    .row{
+        &--heading{
+            display: none;
+        }
+    }
+
+    .js-accordeon{
+        position: relative;
+
+        &:after{
+            position: absolute;
+            display: block;
+            font-family: "icons";
+            content: "\E002";
+            right: 20px;
+            top: 15px;
+            transition: $time;
+        }
+
+        &-body{
+            display: none;
+            transition: $time;
+            flex-direction: column;
+
+            
+        }
+
+        &-opened{
+            &:after{
+                transform: rotateZ(180deg);
+            }
+            .js-accordeon-body{
+                display: flex;
+
+                .row{
+                    flex-direction: column;
+                    margin-top: 20px;
+                    padding-left: 20px;
+                    *{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .btn{
+        margin-top: 10px;
+        width: 100%;
+    }
+}

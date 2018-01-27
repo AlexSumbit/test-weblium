@@ -29,6 +29,9 @@
 	@if $filename == arrow {
 		$char: "\E001";
 	}
+	@if $filename == chevron {
+		$char: "\E002";
+	}
 
 	@return $char;
 }
@@ -46,4 +49,7 @@
 
 .icon-arrow {
 	@include icon(arrow);
+}
+.icon-chevron {
+	@include icon(chevron);
 }

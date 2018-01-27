@@ -70,6 +70,21 @@ window.onload = function(){
             referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
         }
     }
+
+
+    var accordeon = {
+        init: function(){
+            let accordeons = document.querySelectorAll(".js-accordeon");
+
+            accordeons.forEach(function(item){
+                item.addEventListener("click", accordeon.click);
+            });
+        },
+        click: function(e){
+            this.classList.toggle("js-accordeon-opened");
+        }
+    }
     
+    accordeon.init();
     diary.init();
 }
