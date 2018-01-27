@@ -1,3 +1,8 @@
+a{
+    color: unset;
+}
+
+
 .container{
     max-width: 1171px;
     margin: 0 auto;
@@ -136,5 +141,11 @@
         &:hover{
             border-color: #000;
         }
+    }
+
+    &--link{
+        border: 0;
+        color: #000;
+        line-height: 46px;
     }
 }
